@@ -5,7 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="./global.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="./main.js"></script>
+
   <title>Frontend Mentor | Intro component with sign up form</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -15,28 +18,32 @@
   </style>
 </head>
 <body>
+  <div class="container">
+    <div id="first">
+      <h1>Learn to code by <br>watching others</h1>
 
-  Learn to code by watching others
-
-  See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
-  but understanding how developers think is invaluable. 
-
-  Try it free 7 days then $20/mo. thereafter
-
-  First Name 
-  Last Name 
-  Email Address
-  Password
-
-  Claim your free trial 
-
-  By clicking the button, you are agreeing to our Terms and Services
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+      See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+      but understanding how developers think is invaluable.
+    </div>
+    <div id="tryFree">
+      <p><span>Try it free 7 days </span>then <br>$20/mo. thereafter</p>
+    </div>
+    <div id="form">
+      <form>
+        <input type="text" placeholder="First Name"><br>
+        <input type="text" placeholder="Last Name"><br>
+        <input type="email" placeholder="Email Address"><br>
+        <input type="password" placeholder="Password"><br>
+      </form>
+      <button>Claim your free trial</button><br>
+      <p>By clicking the button, you are agreeing to <br>our <span>Terms and Services</span></p>
+    </div>
+    <footer>
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="https://github.com/Ina20/Intro-component-with-sign-up-form" target=_blank>Ina</a>.
+      </p>
+    </footer>
+  </div>
 </body>
 </html>
