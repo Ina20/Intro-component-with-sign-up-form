@@ -20,7 +20,13 @@ h1 {
   flex-direction: column;
   align-items: center;
   margin-top: 30px;
-  width: 90%;
+  flex-basis: 90%;
+}
+#second {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 #tryFree {
   background: hsl(248, 32%, 49%);
@@ -80,8 +86,27 @@ button {
 #form p span {
   color: hsl(0, 100%, 74%) ;
 }
-@media only screen and (min-width: 600px) {
-  body {
-    background: lightblue;
+@media only screen and (min-width: 480px) {
+
+}
+@media only screen and (min-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 4%;
+  }
+  #first {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-basis: 30%;
+    text-align: left;
+  }
+  #second {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 40%;
   }
 }
